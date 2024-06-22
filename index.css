@@ -1,40 +1,26 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(241, 236, 236);
+
+
+.loading{
+position: absolute;
+top: 50%;
+left: 50%;
+width: 46px;
+aspect-ratio: 1;
+--c: no-repeat linear-gradient(black 0 0);
+background:
+var(--c) 0% 50%,
+var(--c) 50% 50%,
+var(--c) 100% 50%;
+background-size: 20% 100%;
+animation: li 1s infinite linear;
+align-items: center;
 }
 
-#rr{
-    text-align: center;
-    margin-top: 20px;
-    cursor: pointer;
-    text-decoration: underline;
-}
+@keyframes li{
+    0% {background-size:20% 100%,20% 100%,20% 100%;}
+    33% {background-size:20% 10%,20% 100%,20% 100%;}
+    50% {background-size:20% 100%,20% 10%,20% 100%;}
+    66% {background-size:20% 100%,20% 100%,20% 10%;}
+    100% {background-size:20% 100%,20% 100%,20% 100%;}
 
-
-.progress{
-    position: relative;
-    height: 20px;
-    width: 180px;
-    border-radius: 10px;
-    margin: 200px 680px ;
-    border: 2px solid black;
-    color: red;
-}
-
-.progress::before{
-    content: "";
-    position: absolute;
-    /* border-radius: inherit;  same as the border radius*/
-    border-radius: 10px;
-    background-color: black;
-    margin: 2px;
-
-    inset: 0 100% 0 0;
-    animation: pp 2s infinite;
-    
-}
-
-@keyframes pp{
-    100%{inset:0}
 }

@@ -3,13 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progress Bar</title>
-    <link rel="Stylesheet" href="./index.css">
-
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    
-    <h1 id="rr"> Progress Bar</h1>
-    <div class="progress" ></div>
+    <div class="loading"></div>
+    <script>
+
+
+// const cart=["nikesh","yadav","abiushek"];
+
+// creteorder(cart);
+// console.log(promiseone);
+
+
+// function creteorder(cart){
+
+// const promise=new Promise((reslove,reject)=>{
+//     setTimeout(()=>{
+        
+//         if(!validate(creteorder)){
+//             const err="this is error in order id";
+//             reject(err);
+//         }
+//         const orderid="123456";
+//         if(orderid){
+//             reslove(orderid);
+           
+//         }
+//     },3000);
+// });
+// return promise;
+// }
+
+
+
+// promise.then(function(orderi){
+//     console.log(orderi);
+// }).catch(function(err){
+//     console.log(err);
+// });
+
+
+
+
+// function validate(cart){
+//     return true;
+// }
+
+
+
+
+
+// const promise =new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         let something = true;
+//         if(something){
+//             resolve("this is the resolve");
+//         }
+//        else{
+//         reject("1234565");
+//        }
+//     },10000);
+// });
+
+// async function dowork(){
+//     console.log("this is nikesh yadav")
+//     let p = await promise;
+//     console.log(p);
+//     console.log("this is nikesh yadav 200");
+
+// }
+// dowork();
+
+
+ 
+   const promise=new Promise((resolve,reject)=>{
+       setTimeout(()=>{
+        let something=true;
+        if(something){
+            resolve("this is the resolve");
+        }
+        else{
+            reject("this is the reject part");
+        }
+       },3000);
+    });
+
+
+async function dowork(){
+    let work= await promise;
+    console.log(work);
+}
+
+dowork();
+
+
+
+
+
+
+
+// promise.then(function(users){
+//     console.log(users);
+// }).catch(function(err){
+//     console.log(err);
+// })
+   </script>
 </body>
 </html>
